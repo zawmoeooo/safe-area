@@ -63,8 +63,8 @@ class SafeArea(private val activity: Activity, private val webView: WebView) {
             val window = activity.window
 
             if (appearanceConfig.customColorsForSystemBars) {
-                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                window.statusBarColor = Color.parseColor(appearanceConfig.statusBarColor)
+                //window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                //window.statusBarColor = Color.parseColor(appearanceConfig.statusBarColor)
                 window.navigationBarColor = Color.parseColor(appearanceConfig.navigationBarColor)
             } else {
                 window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
